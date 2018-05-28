@@ -1,0 +1,25 @@
+@import "../../theme/variables.scss";
+
+.home {
+  margin-top: 50px;
+  dd {
+    margin-bottom: 15px;
+  }
+}
+
+.masthead {
+  color: white;
+  text-align: center;
+  position: relative;
+  padding: 0 !important;
+  img {
+    width: 100%;
+    margin: 0 !important;
+    display: block;
+  }
+}
+
+.counterContainer {
+  text-align: center;
+  margin: 20px;
+}

@@ -1,0 +1,106 @@
+@import "./../../theme/variables";
+
+.sectionIntro {
+  padding: 70px 0 0;
+  @media all and (min-width: 1180px) {
+    padding: 137px 0 0px;
+  }
+}
+
+.title {
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: $black-color;
+  font-family: $font-family-title;
+  @media all and (min-width: 992px) {
+    font-size: 40px;
+  }
+  @media all and (min-width: 1180px) {
+    font-size: 50px;
+  }
+  hr {
+    width: 50px;
+    height: 2px;
+    margin-top: 30px;
+    border: 0;
+    background: $black-color;
+  }
+}
+
+.contentIntroText {
+  text-align: center;
+  color: $white-color;
+  margin: 20px auto;
+  font-family: $font-family-sans-serif;
+  line-height: 1.8;
+  @media all and (min-width: 992px) {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 17px;
+  }
+}
+
+.readMoreBtn {
+  background: $main-color;
+  text-transform: uppercase;
+  color: $white-color;
+  text-decoration: none !important;
+  display: table;
+  padding: 8px 20px;
+  border: 0;
+  margin: 20px auto;
+  text-align: center;
+  font-family: $font-family-sans-serif;
+  font-weight: 600;
+  &:hover, &:focus, &:active {
+    background: $white-color;
+    color: $main-color;
+  }
+}
+
+.blockMiBlack {
+  position: relative;
+  padding: 70px 15px 70px;
+  &:before {
+    position: absolute;
+    z-index: -1;
+    top: 50% !important;
+    left: 0px;
+    height: 50% !important;
+    content: "";
+    background-color: $black-color;
+    width: 100%;
+  }
+}
+
+.itemSelect {
+  position: relative;
+  text-align: center;
+  display: block;
+  text-decoration: none !important;
+  border: 0px;
+  .itemSelectImg {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+  h4 {
+    font-family: $font-family-sans-serif;
+    font-weight: 600;
+    color: $white-color;
+    font-size: $font-size-base;
+    text-transform: uppercase;
+  }
+  p {
+    font-family: $font-family-sans-serif;
+    font-weight: 600;
+    color: $white-color;
+    font-size: $font-size-base;
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,61 @@
+@import "./../../theme/variables";
+
+.sectionIntro {
+  padding: 70px 0;
+  background: $black-color url(https://www.andromedeetpersee.com/img/background.jpg) no-repeat 0 0;
+  background-size: cover;
+  @media all and (min-width: 1180px) {
+    padding: 137px 0;
+  }
+}
+
+.title {
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: $main-color;
+  font-family: $font-family-title;
+  @media all and (min-width: 992px) {
+    font-size: 40px;
+  }
+  @media all and (min-width: 1180px) {
+    font-size: 50px;
+  }
+  hr {
+    width: 50px;
+    height: 2px;
+    border: 0;
+    background: $main-color;
+  }
+}
+
+.contentIntroText {
+  text-align: center;
+  color: $white-color;
+  margin: 20px auto;
+  font-family: $font-family-sans-serif;
+  line-height: 1.8;
+  @media all and (min-width: 992px) {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 17px;
+  }
+}
+
+.readMoreBtn {
+  background: $main-color;
+  text-transform: uppercase;
+  color: $white-color;
+  text-decoration: none !important;
+  display: table;
+  padding: 8px 20px;
+  border: 0;
+  margin: 20px auto;
+  text-align: center;
+  font-family: $font-family-sans-serif;
+  font-weight: 600;
+  &:hover,&:focus,&:active{
+    background: $white-color;
+    color: $main-color;
+  }
+}

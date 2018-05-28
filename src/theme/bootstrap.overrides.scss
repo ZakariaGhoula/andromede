@@ -1,0 +1,118 @@
+/**
+ * Override Bootstrap styles that you can't modify via variables here.
+ *
+ */
+@import "../../node_modules/slick-carousel/slick/slick.css";
+@import "../../node_modules/slick-carousel/slick/slick-theme.css";
+
+.navbar-brand {
+  position: relative;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #33e0ff;
+  background-color: transparent;
+}
+
+body {
+  padding: 0 !important;
+  margin: 0 !important;
+  background: #f2efe8 !important;
+}
+
+section {
+  padding: 0;
+  margin: 0;
+}
+
+.react-cookie-banner {
+  background: $main-color !important;
+  position: fixed !important;
+  width: 100%;
+  bottom: 0;
+  a {
+    border-bottom: 0px !important;
+  }
+}
+
+/*
+.banner: {
+  fontFamily: 'Source Sans Pro',
+  height: 57,
+  background: 'rgba(52, 64, 81, 0.88) url(/cookie.png) 20px 50% no-repeat',
+  backgroundSize: '30px 30px',
+  backgroundColor: '',
+  fontSize: '15px',
+  fontWeight: 600
+},
+button: {
+  border: '1px solid white',
+  borderRadius: 4,
+  width: 66,
+  height: 32,
+  lineHeight: '32px',
+  background: 'transparent',
+  color: 'white',
+  fontSize: '14px',
+  fontWeight: 600,
+  opacity: 1,
+  right: 20,
+  marginTop: -18
+},
+message: {
+  display: 'block',
+  padding: '9px 67px',
+  lineHeight: 1.3,
+  textAlign: 'left',
+  marginRight: 244,
+  color: 'white'
+},
+link: {
+  textDecoration: 'none',
+  fontWeight: 'bold'
+}
+*/
+.loadingBar {
+  z-index: 1000;
+  position: absolute;
+  top: 0;
+  height: 3px;
+  background: $main-color;
+}
+
+.navbar-toggle {
+  border: 0px;
+  .icon-bar {
+    background: $main-color !important;
+  }
+
+  &:hover, &:focus, &:active {
+    background: transparent !important;
+  }
+}
+
+.checkout {
+  ul {
+    padding-left: 0 !important;
+  }
+}
+
+.StripeElement {
+  display: block;
+  margin: 10px 0 20px 0;
+  max-width: 500px;
+  padding: 10px 14px;
+  /*box-shadow: rgba(50, 50, 93, 0.14902) 0px 1px 3px, rgba(0, 0, 0, 0.0196078) 0px 1px 0px;
+  */border-radius: 4px;
+  background: white;
+}
+.StripeElement--focus {
+  /*box-shadow: rgba(50, 50, 93, 0.109804) 0px 4px 6px, rgba(0, 0, 0, 0.0784314) 0px 1px 3px;
+  */-webkit-transition: all 150ms ease;
+  transition: all 150ms ease;
+}
+.StripeElement.PaymentRequestButton {
+  padding: 0;
+}

@@ -1,0 +1,338 @@
+@import "../../theme/variables.scss";
+
+.product {
+  margin-top: 50px;
+}
+
+.sectionIntroCollections {
+  position: relative;
+  padding: 0px !important;
+  &:before {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0px;
+
+    height: 100%;
+    content: "";
+    background-color: $main-color;
+    @media all and (min-width: 768px) {
+      width: 50%;
+    }
+  }
+  .containerBlock {
+    margin: 0 auto;
+    @media all and (min-width: 768px) {
+      width: 750px;
+    }
+    @media all and (min-width: 992px) {
+      width: 970px;
+    }
+    @media all and (min-width: 1200px) {
+      width: 1170px;
+    }
+    position: relative;
+    &:before {
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      right: 0px;
+
+      height: 100%;
+      content: "";
+      background-color: $main-color;
+      @media all and (min-width: 768px) {
+        width: 75%;
+      }
+    }
+  }
+}
+
+.title {
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: $main-color;
+  font-family: $font-family-title;
+  @media all and (min-width: 992px) {
+    font-size: 35px;
+  }
+  @media all and (min-width: 1180px) {
+    font-size: 40px;
+  }
+  hr {
+    width: 50px;
+    height: 2px;
+    border: 0;
+    background: $main-color;
+  }
+}
+
+.contentIntroText {
+  text-align: center;
+  color: $white-color;
+  margin: 20px auto;
+  font-family: $font-family-sans-serif;
+  line-height: 1.8;
+  @media all and (min-width: 992px) {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 17px;
+  }
+}
+
+
+.colImgSquare {
+
+  padding: 70px 0;
+  position: relative;
+  @media all and (max-width: 767px) {
+    padding: 70px 15px 20px;
+    &:before {
+      position: absolute;
+      z-index: -1;
+      top: 50% !important;
+      left: 0px;
+      height: 50% !important;
+      content: "";
+      background-color: $main-color;
+      width: 100%;
+
+    }
+  }
+  @media all and (min-width: 1180px) {
+    padding: 140px 0;
+  }
+  &:before {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0px;
+
+    content: "";
+    background-color: $main-color;
+    @media all and (min-width: 768px) {
+      width: 50%;
+    }
+  }
+  .whiteImgSquare {
+    @media all and (min-width: 768px) {
+      width: 373px;
+      background: #fff;
+      min-height: 338px;
+      margin: 0 auto;
+    }
+    @media all and (min-width: 992px) {
+      width: 482px;
+      background: #fff;
+      min-height: 437px;
+      margin: 0 auto;
+    }
+    @media all and (min-width: 1180px) {
+      width: 573px;
+      background: #fff;
+      min-height: 520px;
+      margin: 0 auto;
+    }
+    img {
+      width: 100%;
+      display: block;
+      border: 0;
+      margin: 0;
+    }
+  }
+}
+
+.singleOrangeColor {
+  padding: 70px 0;
+  background-color: $main-color;
+  @media all and (max-width: 767px) {
+    padding: 10px 15px 50px;
+  }
+  @media all and (min-width: 1180px) {
+
+    padding: 140px 0;
+  }
+  position: relative;
+}
+
+.blockRight {
+
+  @media all and (min-width: 768px) {
+    padding-left: 40px;
+    /*padding-top: 26px;*/
+  }
+
+
+  p {
+    font-family: $font-family-sans-serif;
+    color: #fff;
+  }
+}
+
+.catH5 {
+  text-transform: uppercase;
+  font-family: $font-family-sans-serif;
+  color: #fff;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.titleBlack {
+  color: $black-color;
+  font-family: $font-family-sans-serif;
+  text-transform: uppercase;
+  font-size: $font-size-base;
+  font-weight: 600;
+}
+
+.titleMain {
+  font-family: $font-family-title;
+  color: #fff;
+  @media all and (min-width: 992px) {
+    font-size: 40px;
+    margin-top: 20px;
+  }
+  @media all and (min-width: 992px) {
+    font-size: 40px;
+    margin-top: 20px;
+  }
+  @media all and (min-width: 1180px) {
+    font-size: 50px;
+    margin-top: 17px;
+  }
+  hr {
+
+    height: 2px;
+    border: 0;
+    float: left;
+    background: $black-color;
+    margin-top: 17px;
+    width: 28px;
+    @media all and (min-width: 768px) {
+      margin-top: 20px;
+      width: 35px;
+    }
+    @media all and (min-width: 992px) {
+      margin-top: 18px;
+      width: 40px;
+      height: 3px;
+    }
+    @media all and (min-width: 1180px) {
+      margin-top: 27px;
+      width: 50px;
+    }
+  }
+}
+
+.readMoreBtn {
+  background: $black-color;
+  text-transform: uppercase;
+  color: $white-color;
+  text-decoration: none !important;
+  display: table;
+  padding: 10px 20px;
+  border: 0;
+  margin: 30px 0 0;
+  text-align: center;
+  font-family: $font-family-sans-serif;
+  font-weight: 600;
+  &:hover, &:focus, &:active {
+    background: $white-color;
+    color: $black-color;
+  }
+}
+
+.price {
+  display: block;
+  text-align: left;
+  font-family: $font-family-sans-serif;
+  color: #fff;
+  font-size: 25px;
+  @media all and (min-width: 768px) {
+    font-size: 30px;
+  }
+  @media all and (min-width: 992px) {
+    font-size: 40px;
+  }
+  @media all and (min-width: 1180px) {
+
+  }
+}
+
+.catIngredient {
+  @media all and (max-width: 992px) {
+    margin-top: 60px;
+  }
+}
+
+.backBtn {
+  text-transform: uppercase;
+  font-family: $font-family-sans-serif;
+  color: $black-color;
+  margin-bottom: 10px;
+  display: block;
+  text-decoration: none !important;
+  border-bottom: 0 !important;
+  font-size: 13px;
+  @media all and (min-width: 992px) {
+    margin-top: 10px;
+  }
+  &:hover, &:focus, &:active {
+    color: $black-color;
+  }
+  font-weight: 600;
+  margin-left: 5px;
+  float: left;
+}
+
+.seeAllBtn {
+  text-transform: uppercase;
+  font-family: $font-family-sans-serif;
+  color: $black-color;
+  margin-bottom: 10px;
+  display: block;
+  text-decoration: none !important;
+  border-bottom: 0 !important;
+  font-size: 13px;
+
+  font-weight: 600;
+  margin-right: 5px;
+  float: right;
+  &:hover, &:focus, &:active {
+    color: $black-color;
+  }
+  @media all and (min-width: 992px) {
+
+    margin-top: 10px;
+  }
+}
+.readMoreBtnActive {
+  background: $black-color;
+  text-transform: uppercase;
+  color: $white-color;
+  text-decoration: none !important;
+  display: table;
+cursor: pointer;
+  border: 0;
+  margin: 30px 0 0;
+  text-align: center;
+  font-family: $font-family-sans-serif;
+  font-weight: 600;
+  &:hover, &:focus, &:active {
+    background: $black-color;
+    color: $white-color;
+  }
+}
+
+.btnLess{
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 10px;
+  background: $white-color;
+  color: $black-color;
+}
+.btnInterior{
+  display: inline-block;
+  padding: 10px 15px;
+}
